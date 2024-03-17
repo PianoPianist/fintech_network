@@ -1,0 +1,226 @@
+<html>
+
+<head>
+    <title>Fintech</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1626222186.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav-item net_logo clickable">
+            <img src="./logo.png" class="logo">
+            <p class="head">Network</p>
+        </div>
+        <div class="main-nav">
+            <p class="clickable main-item main-about">About</p>
+            <p class="clickable main-item ">Products</p>
+            <p class="clickable main-item ">Solutions</p>
+            <p class="clickable main-item ">Company</p>
+        </div>
+        <div class="nav-item today">
+            <p>Friday</p>
+            <p class="date"></p>
+            <script>
+                function displayDateTime() {
+                    var dateTime = new Date();
+                    var date = dateTime.toLocaleDateString();
+                    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                    var temp_date = date.split("/");
+                    console.log(temp_date[1])
+                    document.getElementsByClassName("date")[0].innerHTML = months[temp_date[0] - 1] + " " + temp_date[1] + ", " + temp_date[2];
+                }
+
+                displayDateTime();
+            </script>
+        </div>
+        <div class="nav-item login clickable">
+            <p>Log in</p>
+            <i class="fa-solid fa-caret-right"></i>
+        </div>
+    </div>
+    <div class="circles">
+        <div class="fcir">
+            <div class="arr arrl clickable">
+                <i class="fa-solid fa-caret-left"></i>
+            </div>
+            <div class="fcircon">
+                <p class="fnum">93m+</p>
+                <p class="ftxt">Total locked</p>
+                <hr>
+                <p class="fnum">3.2b</p>
+                <p class="ftxt">Market size</p>
+            </div>
+
+        </div>
+        <div class="mcir">
+            <p class="aitext aiup">AI-powered system suggests personalized</p>
+            <p class="aitext">content based on user preferences</p>
+            <p class="tagline">Next level of <span class="orange"><i class="oicon fa-solid fa-bolt"></i> crypto</span>
+                and</p>
+            <p class="tagline tag2"><span class="orange"><i class="oicon fa-solid fa-hashtag"></i> fintech</span>
+                product</p>
+            <div class="arr arrupr clickable">
+                <i class="fa-solid fa-location-arrow"></i>
+            </div>
+
+        </div>
+
+        <div class="lcir">
+            <div class="arr arrr clickable">
+                <i class="fa-solid fa-caret-right"></i>
+            </div>
+            <div class="lcircon">
+                <p class="fnum">1k+</p>
+                <p class="ftxt">Awards</p>
+                <hr>
+                <p class="fnum">221k</p>
+                <p class="ftxt">Transactions</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="userbar">
+        <div class="ufirst uitem">
+            <div class="ucirc ucircf clickable">1</div>
+            <div class="ucirc"></div>
+            <div class="ucirc"></div>
+
+        </div>
+        <div class="usec uitem">
+            <div class="clickable ucirc ucirc2">1</div>
+            <div class="clickable ucirc ucirc2 ucircs">2</div>
+            <div class="clickable ucirc ucirc2 ">3</div>
+
+            <div class="utext">
+                <p>The logo of the largest bubble company</p>
+                <p>has become our flag in the fight against lies!</p>
+            </div>
+            <i class="clickable fa-solid fa-location-arrow arrow"></i>
+        </div>
+
+        <div class="uitem ulast">
+            <div class="ucirc"></div>
+            <div class="ucirc"></div>
+            <div class="clickable ucirc ucircf">3</div>
+        </div>
+        <div class="upfp">
+            <img src="user1.jpeg" class="clickable uicon ">
+            <img src="user2.jpeg" class="clickable uicon uleft">
+            <img src="user3.jpeg" class="clickable uicon uleft">
+
+            <i class="clickable ugo fa-solid fa-location-arrow arrow"></i>
+
+        </div>
+    </div>
+    <div class="about">
+        <div class="abbar">
+            <p class="one">01</p>
+            <div class="clickable abnet">
+                <p>About </p>
+                <img src="logo.png" class="logo logo2">
+                <p class="abh">Network</p>
+            </div>
+        </div>
+    </div>
+    <div class="team">
+        <p class="teamtxt">Our team</p>
+        <div class="teampl">+</div>
+        <p class="teamtxt">has been creating</p>
+        <i class="fa-solid fa-bolt teambol"></i>
+        <p class="teamtxt">a unique and powerful</p>
+        <p class="teamtxt">crypto and fintech product for</p>
+        <div class="net_logo_team">
+            <img src="logo.png" class="logo logo2">
+            <p>Network</p>
+        </div>
+        <p class="white">5 years.</p>
+        <p class="teamtxt">A team of 20+</p>
+        <i class="fa-solid fa-face-laugh-beam teamsm"></i>
+        <p class="people">people</p>
+    </div>
+    <div class="features">
+        <div class="f1 feat_item">
+            <img class="clickable grow modi" src="fim.jpg">
+            <p class="fhead">Constant monitoring</p>
+            <div class="featxt">
+                <p>Monitor domains, websites, app stores</p>
+                <p>and other.</p>
+            </div>
+        </div>
+        <div class="f2box">
+            <div class="grow share">
+                <p>SHARE IT</p>
+                <i class="clickable fa-solid fa-location-arrow fupr"></i>
+            </div>
+            <div class="f2 feat_item">
+                <img class="clickable grow modi" src="fim.jpg">
+                <p class="fhead">AI-based detection</p>
+                <div class="featxt">
+                    <p>Out of the box detection for phishing,</p>
+                    <p>brand infringement, scams and typosquat</p>
+                    <p>attacks.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="f3 feat_item">
+            <img class="clickable grow modi" src="fim.jpg">
+            <p class="fhead">Automatic triage</p>
+            <div class="featxt">
+                <p>Neutralize threats without human</p>
+                <p>intervention.</p>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="abbar">
+            <p class="one">02</p>
+            <div class="abnet clickable">
+                <p>Investors of </p>
+                <img src="logo.png" class="logo logo2">
+                <p class="abh">Network</p>
+            </div>
+        </div>
+    </div>
+    <div class="team">
+        <p class="teamtxt">Our investors of</p>
+        <i class="teamtxt fa-solid fa-bahai"></i>
+        <p class="teamtxt">Network project</p>
+    </div>
+    <div class="investors">
+        <div class="clickable inv arr">
+            <i class="fa-solid fa-caret-left"></i>
+        </div>
+        <div class="invlogos">
+            <div class="clickable invlogo ship">
+                <img class="logoimg" src="ship.png">
+            </div>
+            <div class="clickable invlogo diam">
+                <img class="logoimg" src="diamond.png">
+            </div>
+            <div class="clickable invlogo bird">
+                <img class="logoimg" src="bird.png">
+            </div>
+            <div class="clickable invlogo slice orlogo">
+                <img class="logoimg" src="slice.png">
+                <i class="fa-solid fa-location-arrow sliarr"></i>
+
+            </div>
+            <div class="clickable invlogo petal">
+                <img class="logoimg" src="petal.png">
+            </div>
+        </div>
+        <div class="clickable inv arr">
+            <i class="fa-solid fa-caret-right"></i>
+        </div>
+
+    </div>
+</body>
+
+</html>
